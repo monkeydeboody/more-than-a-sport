@@ -1,0 +1,1227 @@
+/* =========================================
+   MORE THAN A SPORT
+   MAIN STYLES
+========================================= */
+
+:root {
+    --cream: #eeece4;
+    --black: #111714;
+    --orange: #ef542f;
+    --gray: #686b65;
+    --light-gray: #c8cbc3;
+    --dark-gray: #292e2a;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--black);
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 76px;
+
+    padding: 0 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(238, 236, 228, 0.9);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(17, 23, 20, 0.12);
+
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+section {
+    position: relative;
+}
+
+.section-number {
+    position: absolute;
+    top: 40px;
+    right: 4vw;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+
+    color: var(--gray);
+}
+
+.small-label {
+    display: block;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+
+    color: var(--gray);
+}
+
+.orange-dot {
+    color: var(--orange);
+}
+
+.section-heading {
+    padding-top: 110px;
+    margin-bottom: 70px;
+}
+
+.section-heading h2 {
+    margin-top: 20px;
+
+    font-size: clamp(48px, 7vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+}
+
+.section-heading p {
+    max-width: 520px;
+    margin-top: 35px;
+
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 120px 4vw 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+
+    color: var(--gray);
+}
+
+.hero-title {
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: clamp(80px, 15vw, 240px);
+    line-height: 0.78;
+
+    letter-spacing: -0.08em;
+    font-weight: 800;
+}
+
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 40px;
+
+    margin-top: 70px;
+}
+
+.hero-bottom p {
+    max-width: 460px;
+
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.primary-button {
+    padding: 18px 25px;
+
+    background: var(--black);
+    color: var(--cream);
+
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+
+    transition: 0.25s;
+}
+
+.primary-button:hover {
+    background: var(--orange);
+}
+
+.hero-sports {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 90px;
+
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.hero-sports span {
+    padding: 15px 0;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+}
+
+.hero-sports span:not(:last-child) {
+    border-right: 1px solid var(--black);
+}
+
+.scroll-indicator {
+    margin-top: 30px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+
+    color: var(--gray);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.dark-section {
+    background: var(--black);
+    color: var(--cream);
+}
+
+.intro {
+    min-height: 85vh;
+
+    padding: 120px 4vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.intro .section-number {
+    color: #858982;
+}
+
+.intro-content {
+    width: 100%;
+}
+
+.intro h2 {
+    margin-top: 25px;
+
+    font-size: clamp(55px, 8vw, 125px);
+    line-height: 0.88;
+
+    letter-spacing: -0.06em;
+}
+
+.intro p {
+    max-width: 540px;
+
+    margin-top: 50px;
+
+    color: #a8aba4;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   GOALS
+========================================= */
+
+.goals-section {
+    padding: 100px 4vw 130px;
+}
+
+.goal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+.goal-card {
+    position: relative;
+
+    min-height: 240px;
+
+    padding: 30px;
+
+    background: transparent;
+
+    border: none;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.goal-card:not(:last-child) {
+    border-right: 1px solid var(--black);
+}
+
+.goal-card:hover,
+.goal-card.active {
+    background: var(--black);
+    color: var(--cream);
+}
+
+.goal-number {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.goal-card h3 {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+
+    font-size: 26px;
+    letter-spacing: -0.04em;
+}
+
+.goal-arrow {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    font-size: 25px;
+}
+
+.goal-result {
+    min-height: 170px;
+
+    padding: 35px;
+
+    background: var(--dark-gray);
+    color: var(--cream);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-label {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    color: #9da199;
+}
+
+.goal-result p {
+    max-width: 650px;
+
+    margin-top: 15px;
+
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   MARTIAL ARTS
+========================================= */
+
+.paths-section {
+    padding: 100px 4vw 130px;
+
+    background: var(--black);
+    color: var(--cream);
+}
+
+.paths-section .section-number {
+    color: #858982;
+}
+
+.paths-heading p {
+    color: #9da199;
+}
+
+.martial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.martial-card {
+    position: relative;
+
+    min-height: 600px;
+
+    overflow: hidden;
+
+    background: var(--dark-gray);
+}
+
+.martial-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transform: scale(1.01);
+
+    transition:
+        filter 0.6s ease,
+        transform 0.8s ease;
+}
+
+.martial-card:hover .martial-image {
+    filter: grayscale(0%);
+    transform: scale(1.06);
+}
+
+.martial-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.15) 70%
+        );
+}
+
+.martial-content {
+    position: absolute;
+
+    inset: 0;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.martial-number {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+}
+
+.martial-category {
+    margin-bottom: 10px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+
+    color: #c3c6be;
+}
+
+.martial-content h3 {
+    font-size: clamp(50px, 7vw, 100px);
+    line-height: 0.82;
+
+    letter-spacing: -0.07em;
+}
+
+.martial-content p {
+    max-width: 400px;
+
+    margin-top: 25px;
+
+    color: #d0d2cc;
+    line-height: 1.6;
+}
+
+.explore-button {
+    align-self: flex-start;
+
+    margin-top: 30px;
+    padding: 14px 20px;
+
+    background: var(--cream);
+    color: var(--black);
+
+    border: none;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+
+    transition: 0.25s;
+}
+
+.explore-button:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+
+/* =========================================
+   SPORT EXPERIENCE
+========================================= */
+
+.sport-experience {
+    display: none;
+
+    background: var(--cream);
+}
+
+.sport-experience.active {
+    display: block;
+}
+
+.back-button {
+    margin: 40px 4vw 0;
+
+    border: none;
+    background: transparent;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+
+    color: var(--gray);
+}
+
+.back-button:hover {
+    color: var(--orange);
+}
+
+.sport-hero {
+    min-height: 75vh;
+
+    padding: 130px 4vw 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sport-category {
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    color: var(--gray);
+}
+
+.sport-hero h2 {
+    margin-top: 20px;
+
+    font-size: clamp(90px, 15vw, 230px);
+    line-height: 0.78;
+
+    letter-spacing: -0.08em;
+}
+
+.sport-hero p {
+    margin-top: 50px;
+
+    max-width: 650px;
+
+    font-size: clamp(24px, 3vw, 42px);
+    line-height: 1.15;
+
+    color: var(--gray);
+}
+
+.sport-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    padding: 100px 4vw;
+
+    background: #dddcd4;
+}
+
+.information-block p {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+.skill-list {
+    margin-top: 25px;
+}
+
+.skill-item {
+    padding: 16px 0;
+
+    border-bottom: 1px solid #aaaDA5;
+
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+}
+
+.challenge-block {
+    padding: 130px 4vw;
+
+    background: var(--black);
+    color: var(--cream);
+}
+
+.challenge-block .small-label {
+    color: #888c85;
+}
+
+.challenge-block h3 {
+    max-width: 1100px;
+
+    margin-top: 35px;
+
+    font-size: clamp(45px, 7vw, 100px);
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+}
+
+.lesson-block {
+    padding: 130px 4vw;
+}
+
+.lesson-block h3 {
+    max-width: 1000px;
+
+    margin-top: 35px;
+
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+.sport-success {
+    padding: 130px 4vw;
+
+    background: var(--orange);
+    color: var(--black);
+}
+
+.sport-success .small-label {
+    color: rgba(17, 23, 20, 0.65);
+}
+
+.sport-success h3 {
+    margin-top: 30px;
+
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+}
+
+.sport-success p {
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TRANSFER
+========================================= */
+
+.transfer-section {
+    padding: 100px 4vw 140px;
+}
+
+.transfer-flow {
+    display: flex;
+    align-items: center;
+
+    margin-top: 70px;
+}
+
+.transfer-step {
+    flex: 1;
+
+    padding: 25px 15px;
+
+    background: transparent;
+
+    border: 1px solid var(--black);
+
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+
+    transition: 0.25s;
+}
+
+.transfer-step span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--gray);
+}
+
+.transfer-step.active,
+.transfer-step:hover {
+    background: var(--black);
+    color: var(--cream);
+}
+
+.flow-line {
+    width: 40px;
+    height: 1px;
+
+    background: var(--black);
+}
+
+.transfer-message {
+    margin-top: 50px;
+
+    max-width: 800px;
+}
+
+.transfer-message h3 {
+    margin-top: 20px;
+
+    font-size: 60px;
+    letter-spacing: -0.06em;
+}
+
+.transfer-message p {
+    margin-top: 20px;
+
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MINDSET
+========================================= */
+
+.mindset-section {
+    padding: 100px 4vw 130px;
+
+    background: #dddcd4;
+}
+
+.mindset-list {
+    margin-top: 70px;
+
+    border-top: 1px solid var(--black);
+}
+
+.mindset-row {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid var(--black);
+}
+
+.mindset-old {
+    color: var(--gray);
+}
+
+.mindset-new {
+    font-weight: 700;
+}
+
+.mindset-arrow {
+    text-align: center;
+
+    color: var(--orange);
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   EXCUSE SECTION
+========================================= */
+
+.excuse-section {
+    min-height: 90vh;
+
+    padding: 130px 4vw;
+
+    background: var(--black);
+    color: var(--cream);
+
+    display: flex;
+    align-items: center;
+}
+
+.excuse-content {
+    max-width: 1100px;
+}
+
+.excuse-content .small-label {
+    color: #888c85;
+}
+
+.excuse-content h2 {
+    margin-top: 30px;
+
+    font-size: clamp(70px, 12vw, 180px);
+    line-height: 0.8;
+
+    letter-spacing: -0.08em;
+}
+
+.excuse-content p {
+    max-width: 700px;
+
+    margin-top: 40px;
+
+    color: #a9ada5;
+    line-height: 1.8;
+}
+
+.excuse-line {
+    margin-top: 60px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: var(--orange);
+}
+
+
+/* =========================================
+   QUIZ
+========================================= */
+
+.quiz-section {
+    padding: 100px 4vw 140px;
+}
+
+.quiz-box,
+.quiz-result {
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    padding: 60px;
+
+    border: 1px solid var(--black);
+}
+
+.quiz-progress {
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+
+    color: var(--gray);
+}
+
+.quiz-box h3 {
+    margin-top: 30px;
+
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 40px;
+}
+
+.quiz-option {
+    padding: 18px;
+
+    background: transparent;
+
+    border: 1px solid var(--light-gray);
+
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.quiz-option:hover,
+.quiz-option.selected {
+    background: var(--black);
+    color: var(--cream);
+
+    border-color: var(--black);
+}
+
+.quiz-next,
+.restart-button {
+    margin-top: 30px;
+
+    padding: 16px 25px;
+
+    background: var(--black);
+    color: var(--cream);
+
+    border: none;
+
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+}
+
+.quiz-next:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.quiz-result {
+    display: none;
+
+    background: var(--orange);
+    border: none;
+}
+
+.quiz-result.show {
+    display: block;
+}
+
+.quiz-result h3 {
+    margin-top: 20px;
+
+    font-size: 70px;
+    letter-spacing: -0.06em;
+}
+
+.quiz-result p {
+    max-width: 650px;
+
+    margin-top: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.final-section {
+    min-height: 100vh;
+
+    padding: 130px 4vw;
+
+    background: var(--orange);
+
+    display: flex;
+    align-items: center;
+}
+
+.final-section .section-number {
+    color: rgba(17, 23, 20, 0.55);
+}
+
+.final-content {
+    width: 100%;
+}
+
+.final-content .small-label {
+    color: rgba(17, 23, 20, 0.6);
+}
+
+.final-content h2 {
+    margin-top: 30px;
+
+    font-size: clamp(70px, 12vw, 190px);
+    line-height: 0.78;
+
+    letter-spacing: -0.08em;
+}
+
+.final-content h3 {
+    margin-top: 60px;
+
+    font-size: clamp(55px, 8vw, 120px);
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+}
+
+.final-content p {
+    max-width: 600px;
+
+    margin-top: 35px;
+
+    line-height: 1.7;
+}
+
+.final-question {
+    margin-top: 70px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 60px 4vw;
+
+    background: var(--black);
+    color: var(--cream);
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+footer p {
+    max-width: 400px;
+
+    margin-top: 20px;
+
+    color: #8f938b;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    display: block;
+
+    margin-top: 60px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+
+    color: #686c65;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: var(--black);
+        color: var(--cream);
+
+        z-index: 999;
+
+        display: none;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu a {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-title {
+        font-size: 20vw;
+    }
+
+    .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-sports {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-sports span:nth-child(2) {
+        border-right: none;
+    }
+
+    .hero-sports span:nth-child(-n+2) {
+        border-bottom: 1px solid var(--black);
+    }
+
+    .goal-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .goal-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .goal-card:nth-child(1),
+    .goal-card:nth-child(2) {
+        border-bottom: 1px solid var(--black);
+    }
+
+    .martial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .martial-card {
+        min-height: 500px;
+    }
+
+    .sport-information {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .transfer-flow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .flow-line {
+        width: 1px;
+        height: 25px;
+
+        margin-left: 25px;
+    }
+
+    .mindset-row {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .mindset-arrow {
+        text-align: left;
+    }
+
+    .quiz-box,
+    .quiz-result {
+        padding: 30px;
+    }
+
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-result h3 {
+        font-size: 50px;
+    }
+
+}

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MORE THAN A SPORT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <a href="#home" class="nav-logo">
+            MORE THAN A SPORT
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#discover">DISCOVER</a>
+            <a href="#paths">MARTIAL ARTS</a>
+            <a href="#transfer">BEYOND THE GYM</a>
+            <a href="#quiz">QUIZ</a>
+        </div>
+
+        <button class="menu-button" id="menuButton">
+            MENU
+        </button>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">HOME</a>
+        <a href="#discover">DISCOVER</a>
+        <a href="#paths">MARTIAL ARTS</a>
+        <a href="#transfer">BEYOND THE GYM</a>
+        <a href="#quiz">QUIZ</a>
+
+    </div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-top">
+                <span>FOUR WAYS TO BEGIN</span>
+                <span>01 / 08</span>
+            </div>
+
+            <div class="hero-title">
+
+                <span>MORE</span>
+                <span>THAN</span>
+                <span>A SPORT<span class="orange-dot">.</span></span>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <p>
+                    Martial arts can be more than competition.
+                    They can challenge you, develop you and change
+                    the way you approach difficult moments.
+                </p>
+
+                <a href="#discover" class="primary-button">
+                    START YOUR JOURNEY →
+                </a>
+
+            </div>
+
+            <div class="hero-sports">
+
+                <span>JIU-JITSU</span>
+                <span>MUAY THAI</span>
+                <span>WRESTLING</span>
+                <span>MMA</span>
+
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL TO EXPLORE ↓
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="intro dark-section" id="discover">
+
+            <div class="section-number">
+                02 / 08
+            </div>
+
+            <div class="intro-content">
+
+                <div class="small-label">
+                    IT STARTS WITH A QUESTION
+                </div>
+
+                <h2>
+                    YOU DON'T NEED<br>
+                    TO KNOW WHERE<br>
+                    YOU'RE GOING<span class="orange-dot">.</span>
+                </h2>
+
+                <p>
+                    You just need to be willing to start.
+                    Training gives you a place to begin,
+                    a challenge to face and a reason to keep going.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT DO YOU WANT TO BUILD?
+        ========================== -->
+
+        <section class="goals-section">
+
+            <div class="section-number">
+                03 / 08
+            </div>
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    BEFORE YOU PICK A SPORT
+                </span>
+
+                <h2>
+                    WHAT DO YOU<br>
+                    WANT TO BUILD<span class="orange-dot">?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="goal-grid">
+
+                <button class="goal-card" data-goal="confidence">
+
+                    <span class="goal-number">01</span>
+
+                    <h3>CONFIDENCE</h3>
+
+                    <span class="goal-arrow">↗</span>
+
+                </button>
+
+
+                <button class="goal-card" data-goal="strength">
+
+                    <span class="goal-number">02</span>
+
+                    <h3>STRENGTH</h3>
+
+                    <span class="goal-arrow">↗</span>
+
+                </button>
+
+
+                <button class="goal-card" data-goal="discipline">
+
+                    <span class="goal-number">03</span>
+
+                    <h3>DISCIPLINE</h3>
+
+                    <span class="goal-arrow">↗</span>
+
+                </button>
+
+
+                <button class="goal-card" data-goal="resilience">
+
+                    <span class="goal-number">04</span>
+
+                    <h3>RESILIENCE</h3>
+
+                    <span class="goal-arrow">↗</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="goal-result" id="goalResult">
+
+                <span class="result-label">
+                    SELECT ONE
+                </span>
+
+                <p>
+                    Your answer will reveal why martial arts
+                    can help develop this quality.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MARTIAL ARTS
+        ========================== -->
+
+        <section class="paths-section" id="paths">
+
+            <div class="section-number">
+                04 / 08
+            </div>
+
+            <div class="section-heading paths-heading">
+
+                <span class="small-label">
+                    PICK YOUR PATH
+                </span>
+
+                <h2>
+                    FOUR SPORTS.<br>
+                    FOUR DIFFERENT<br>
+                    CHALLENGES<span class="orange-dot">.</span>
+                </h2>
+
+                <p>
+                    There is no single "best" martial art.
+                    Each one asks something different from you.
+                </p>
+
+            </div>
+
+
+            <!-- MARTIAL ART CARDS -->
+
+            <div class="martial-grid">
+
+
+                <!-- BJJ -->
+
+                <article class="martial-card">
+
+                    <img
+                        src="images/BJJ.jpg"
+                        alt="Jiu-Jitsu"
+                        class="martial-image"
+                    >
+
+                    <div class="martial-overlay"></div>
+
+                    <div class="martial-content">
+
+                        <span class="martial-number">
+                            01
+                        </span>
+
+                        <span class="martial-category">
+                            GRAPPLING
+                        </span>
+
+                        <h3>
+                            JIU-<br>JITSU
+                        </h3>
+
+                        <p>
+                            When strength isn't enough,
+                            you learn to think.
+                        </p>
+
+                        <button
+                            class="explore-button"
+                            data-sport="bjj"
+                        >
+                            EXPLORE →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MUAY THAI -->
+
+                <article class="martial-card">
+
+                    <img
+                        src="images/IFMA.png"
+                        alt="Muay Thai"
+                        class="martial-image"
+                    >
+
+                    <div class="martial-overlay"></div>
+
+                    <div class="martial-content">
+
+                        <span class="martial-number">
+                            02
+                        </span>
+
+                        <span class="martial-category">
+                            STRIKING
+                        </span>
+
+                        <h3>
+                            MUAY<br>THAI
+                        </h3>
+
+                        <p>
+                            Stay composed when
+                            pressure starts to build.
+                        </p>
+
+                        <button
+                            class="explore-button"
+                            data-sport="muaythai"
+                        >
+                            EXPLORE →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- WRESTLING -->
+
+                <article class="martial-card">
+
+                    <img
+                        src="images/Wres.jpg"
+                        alt="Wrestling"
+                        class="martial-image"
+                    >
+
+                    <div class="martial-overlay"></div>
+
+                    <div class="martial-content">
+
+                        <span class="martial-number">
+                            03
+                        </span>
+
+                        <span class="martial-category">
+                            GRAPPLING
+                        </span>
+
+                        <h3>
+                            WRESTLING
+                        </h3>
+
+                        <p>
+                            Keep working when
+                            stopping would be easier.
+                        </p>
+
+                        <button
+                            class="explore-button"
+                            data-sport="wrestling"
+                        >
+                            EXPLORE →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MMA -->
+
+                <article class="martial-card">
+
+                    <img
+                        src="images/MMA.jpg"
+                        alt="MMA"
+                        class="martial-image"
+                    >
+
+                    <div class="martial-overlay"></div>
+
+                    <div class="martial-content">
+
+                        <span class="martial-number">
+                            04
+                        </span>
+
+                        <span class="martial-category">
+                            MIXED
+                        </span>
+
+                        <h3>
+                            MMA
+                        </h3>
+
+                        <p>
+                            Adapt when the situation
+                            changes.
+                        </p>
+
+                        <button
+                            class="explore-button"
+                            data-sport="mma"
+                        >
+                            EXPLORE →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SPORT INFORMATION
+        ========================== -->
+
+        <section class="sport-experience" id="sportExperience">
+
+            <button class="back-button" id="backButton">
+                ← BACK TO MARTIAL ARTS
+            </button>
+
+
+            <div class="sport-hero">
+
+                <span class="sport-category" id="sportCategory">
+                    GRAPPLING
+                </span>
+
+                <h2 id="sportTitle">
+                    JIU-JITSU
+                </h2>
+
+                <p id="sportQuote">
+                    Think when strength isn't enough.
+                </p>
+
+            </div>
+
+
+            <div class="sport-information">
+
+                <div class="information-block">
+
+                    <span class="small-label">
+                        WHAT IS IT?
+                    </span>
+
+                    <p id="sportWhat">
+                    </p>
+
+                </div>
+
+
+                <div class="information-block">
+
+                    <span class="small-label">
+                        WHAT CAN IT DEVELOP?
+                    </span>
+
+                    <div
+                        class="skill-list"
+                        id="sportSkills">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="challenge-block">
+
+                <span class="small-label">
+                    THE CHALLENGE
+                </span>
+
+                <h3 id="sportChallenge">
+                </h3>
+
+            </div>
+
+
+            <div class="lesson-block">
+
+                <span class="small-label">
+                    THE LESSON
+                </span>
+
+                <h3 id="sportLesson">
+                </h3>
+
+            </div>
+
+
+            <div class="sport-success">
+
+                <span class="small-label">
+                    WHY IT MATTERS
+                </span>
+
+                <h3>
+                    THE SKILLS DON'T<br>
+                    STAY IN THE GYM<span class="orange-dot">.</span>
+                </h3>
+
+                <p>
+                    What you practice repeatedly can influence
+                    how you approach challenges outside training too.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TRANSFER
+        ========================== -->
+
+        <section class="transfer-section" id="transfer">
+
+            <div class="section-number">
+                05 / 08
+            </div>
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    BEYOND THE GYM
+                </span>
+
+                <h2>
+                    TRAINING DOESN'T<br>
+                    HAVE TO STAY<br>
+                    IN TRAINING<span class="orange-dot">.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="transfer-flow">
+
+                <button class="transfer-step active">
+                    <span>01</span>
+                    TRAINING
+                </button>
+
+                <div class="flow-line"></div>
+
+                <button class="transfer-step">
+                    <span>02</span>
+                    CHALLENGE
+                </button>
+
+                <div class="flow-line"></div>
+
+                <button class="transfer-step">
+                    <span>03</span>
+                    LESSON
+                </button>
+
+                <div class="flow-line"></div>
+
+                <button class="transfer-step">
+                    <span>04</span>
+                    LIFE
+                </button>
+
+            </div>
+
+
+            <div class="transfer-message" id="transferMessage">
+
+                <span class="small-label">
+                    TRAINING
+                </span>
+
+                <h3>
+                    YOU SHOW UP.
+                </h3>
+
+                <p>
+                    You create a habit of doing something
+                    even when you don't feel completely ready.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MINDSET
+        ========================== -->
+
+        <section class="mindset-section">
+
+            <div class="section-number">
+                06 / 08
+            </div>
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    THE MINDSET SHIFT
+                </span>
+
+                <h2>
+                    IT CHANGES<br>
+                    HOW YOU<br>
+                    THINK<span class="orange-dot">.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="mindset-list">
+
+                <div class="mindset-row">
+
+                    <span class="mindset-old">
+                        I CAN'T DO THIS.
+                    </span>
+
+                    <span class="mindset-arrow">
+                        →
+                    </span>
+
+                    <span class="mindset-new">
+                        I'LL FIGURE IT OUT.
+                    </span>
+
+                </div>
+
+
+                <div class="mindset-row">
+
+                    <span class="mindset-old">
+                        I DON'T WANT TO FAIL.
+                    </span>
+
+                    <span class="mindset-arrow">
+                        →
+                    </span>
+
+                    <span class="mindset-new">
+                        FAILURE CAN TEACH ME.
+                    </span>
+
+                </div>
+
+
+                <div class="mindset-row">
+
+                    <span class="mindset-old">
+                        I'LL QUIT.
+                    </span>
+
+                    <span class="mindset-arrow">
+                        →
+                    </span>
+
+                    <span class="mindset-new">
+                        ONE MORE ROUND.
+                    </span>
+
+                </div>
+
+
+                <div class="mindset-row">
+
+                    <span class="mindset-old">
+                        I'M NERVOUS.
+                    </span>
+
+                    <span class="mindset-arrow">
+                        →
+                    </span>
+
+                    <span class="mindset-new">
+                        LET'S TRY.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DISCLAIMER / EXCUSE
+        ========================== -->
+
+        <section class="excuse-section">
+
+            <div class="excuse-content">
+
+                <span class="small-label">
+                    A NOTE BEFORE YOU LEAVE
+                </span>
+
+                <h2>
+                    WHAT'S YOUR<br>
+                    EXCUSE<span class="orange-dot">?</span>
+                </h2>
+
+                <p>
+                    This isn't about judging people for circumstances
+                    they cannot control. Not everyone has the same
+                    access, time, health, resources or opportunities.
+                </p>
+
+                <p>
+                    The question is for the moments when you
+                    <strong>do</strong> have a choice:
+                    will you keep waiting, or will you take one step?
+                </p>
+
+                <div class="excuse-line">
+                    YOU DON'T NEED TO DO EVERYTHING.
+                    <br>
+                    JUST START SOMEWHERE.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUIZ
+        ========================== -->
+
+        <section class="quiz-section" id="quiz">
+
+            <div class="section-number">
+                07 / 08
+            </div>
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    FIND YOUR STARTING POINT
+                </span>
+
+                <h2>
+                    WHICH MARTIAL<br>
+                    ART FITS YOU<span class="orange-dot">?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="quiz-box" id="quizBox">
+
+                <div class="quiz-progress">
+                    QUESTION <span id="questionNumber">1</span> / 6
+                </div>
+
+                <h3 id="questionText">
+                    What do you want to develop most?
+                </h3>
+
+
+                <div class="quiz-options" id="quizOptions"></div>
+
+
+                <button
+                    class="quiz-next"
+                    id="quizNext"
+                    disabled
+                >
+                    NEXT →
+                </button>
+
+            </div>
+
+
+            <div
+                class="quiz-result"
+                id="quizResult"
+            >
+
+                <span class="small-label">
+                    YOUR STARTING POINT
+                </span>
+
+                <h3 id="quizResultTitle"></h3>
+
+                <p id="quizResultText"></p>
+
+                <button
+                    class="restart-button"
+                    id="restartQuiz"
+                >
+                    TAKE AGAIN ↻
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+
+        <section class="final-section">
+
+            <div class="section-number">
+                08 / 08
+            </div>
+
+            <div class="final-content">
+
+                <span class="small-label">
+                    THE BEGINNING
+                </span>
+
+                <h2>
+                    YOU DON'T HAVE<br>
+                    TO BE READY<span class="orange-dot">.</span>
+                </h2>
+
+                <h3>
+                    YOU JUST HAVE<br>
+                    TO BEGIN.
+                </h3>
+
+                <p>
+                    This is me at 15.
+                </p>
+
+                <p>
+                    I didn't start with everything figured out.
+                    I started by showing up.
+                </p>
+
+                <div class="final-question">
+                    WHAT WILL YOU START?
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <div class="footer-logo">
+                MORE THAN A SPORT<span class="orange-dot">.</span>
+            </div>
+
+            <p>
+                A reminder that the lessons from training
+                can reach further than the gym.
+            </p>
+
+            <span class="footer-bottom">
+                © 2026 MORE THAN A SPORT
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
